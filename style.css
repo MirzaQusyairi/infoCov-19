@@ -506,13 +506,13 @@ p {
 	color: crimson;
 }
 .tracking-item:nth-child(1) {
-	background: crimson;
+	background:#dc3545;
 }
 .tracking-item:nth-child(2) {
-	background: limegreen;
+	background:#28a745;
 }
 .tracking-item:nth-child(3) {
-	background: steelblue;
+	background:#17a2b8;
 }
 .table-content {
 	border-collapse: collapse;
@@ -546,6 +546,22 @@ p {
 	border-bottom: 2px solid #009879;
 }
 
+#tracking .title {
+  align-self: flex-start;
+  padding-left: 93px;
+  margin-bottom: -10px;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#tracking .title-2 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#tracking .pt-30 {
+	padding-top: 30px;
+}
 
 #tracking .tracking {
 	flex-direction: column;
@@ -582,6 +598,7 @@ p {
 	flex-direction: column;
 	box-shadow: 0px 0px 18px 0 #0000002c;
 	transition: .3s ease box-shadow;
+	border: 1px solid rgba(0,0,0,.125);	
 }
 #tracking .tracking-item:hover {
 	box-shadow: 0px 0px 5px 0 #0000002c;
@@ -604,8 +621,9 @@ p {
 	color: linen;
 }
 #tracking .tracking-info h4 {
-	font-size: 1rem;
+	font-size: 11px;
 	color: linen;
+	padding-top: 8px;
 }
 /* End Tracking section */
 
@@ -775,8 +793,9 @@ p {
 	#tracking .tracking-item .tracking-info {
 		width: 100%;
 		text-align: left;
-		padding-left: 20px;
+		/*padding-left: 20px;*/
 	}
+	
 	/* End tracking  */
 }
 /* End Media Query For Tablet */
@@ -811,8 +830,47 @@ p {
 	}
 
 	#tracking .tracking-bottom .tracking-item{
-		flex-basis: 22%;
+		/*flex-basis: 22%;*/
+		flex-basis: 25%;
 		margin: 1.5%;
 	}
+
+	#tracking .title {
+		align-self: flex-start;
+		padding-left: 65px;
+		margin-bottom: -10px;
+		font-size: 20px;
+		font-weight: normal;
+	}
+	
+	#tracking .title-2 {
+		font-size: 20px;
+		font-weight: normal;
+	}
+	
+	#tracking .pt-30 {
+		padding-top: 30px;
+	}
+
+	#tracking .img-emot{
+		max-width: 100px;
+		max-height: 100px;
+	}
+	
 }
 /* End  Media Query For Desktop */
+
+/* Media Query For Phone */
+@media only screen and (max-width: 600px) {
+	#tracking .title {
+		padding-left: 57px;
+		margin-bottom: -55px;
+		padding-top: 28px;
+	}
+	#tracking .img-emot{
+		max-width: 100px;
+		max-height: 100px;
+	}
+
+} 
+/* End Media Query For Phone */
